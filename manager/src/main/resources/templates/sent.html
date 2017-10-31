@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Confirmation of data submission</title>
+        <meta http-equiv="Content-Type" message="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Sent</h1>
+        <p th:text="'message: ' + ${message.message}" />
+        <a href="/form"><button>Submit another message</button></a>
+    </body>
+</html>

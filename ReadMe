@@ -1,0 +1,8 @@
+Start RabbitMQ
+Start Ingestor
+Start Manager
+Start Database
+
+Navigate to localhost:8070/form
+
+Follow instructions to insert and view records

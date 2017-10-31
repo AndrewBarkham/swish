@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Submit data to database</title>
+        <meta http-equiv="Content-Type" message="text/html; charset=UTF-8" />
+        <link href="../static/css/form.css" th:href="@{/css/form.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Submission Form</h1>
+        <form action="#" th:action="@{/sent}" th:object="${message}" method="post">
+            <p>Message: <input type="text" th:field="*{message}" /></p>
+            <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+        </form>
+        <a href="/content"> <button>View Database contents</button></a>
+    </body>
+</html>

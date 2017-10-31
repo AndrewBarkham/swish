@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Database contents</title>
+        <meta http-equiv="Content-Type" message="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Data Table</h1>
+        <p th:each="resultMap: ${data}">
+            <span th:text="'ID: ' + ${resultMap.key} + ', Name: ' + ${resultMap.value}"></span>
+        </p>
+    </body>
+</html>
